@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Weather By Location</title>
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-  <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
-  <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
-  <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
-</head>
-
-<body>
-
-  <form id="city-form">
-    <label for="city-input">Search for a City</label>
-    <input type="text" id="city-input"><br>
-    <input id="add-city" type="submit" value="Submit">
-  </form>
-
-  <div id="cities-buttons">
-
-  </div>
+  <body>
+    <header >
+      
+    </header>
+    <div class="container">
 
 
-  <div id="weatherData">
+
+    </div>
+ 
     
-    <div id="today"></div>
-
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/script.js"></script>
-  
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+    <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_advancedFormat)
+      dayjs.extend(window.dayjs_plugin_weekOfYear)
+    </script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
